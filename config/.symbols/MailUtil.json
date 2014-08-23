@@ -1,0 +1,275 @@
+{
+    "properties": [
+        {
+            "modifiers": [], 
+            "name": "messages", 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 48, 
+                "line": 4
+            }, 
+            "type": "LIST"
+        }
+    ], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [
+        {
+            "modifiers": [], 
+            "name": "MailUtil", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 12, 
+                "line": 9
+            }, 
+            "type": null
+        }
+    ], 
+    "namespace": null, 
+    "name": "MailUtil", 
+    "tableDeclaration": {
+        "type": "MailUtil", 
+        "modifiers": [], 
+        "references": [], 
+        "location": {
+            "column": 14, 
+            "line": 1
+        }, 
+        "name": "MailUtil"
+    }, 
+    "key": "01p10000000zwiDAAQ", 
+    "variables": [
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 49, 
+                "line": 13
+            }, 
+            "name": "aDisplayName"
+        }, 
+        {
+            "type": "OrgWideEmailAddress", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 29, 
+                "line": 14
+            }, 
+            "name": "orgAddress"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 50, 
+                "line": 31
+            }, 
+            "name": "aTemplateName"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 29, 
+                "line": 32
+            }, 
+            "name": "eList"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 20, 
+                "line": 60
+            }, 
+            "name": "replyTo"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 61
+            }, 
+            "name": "senderDisplayName"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 62
+            }, 
+            "name": "toAddresses"
+        }, 
+        {
+            "type": "LIST", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 24, 
+                "line": 63
+            }, 
+            "name": "ccAddresses"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 64
+            }, 
+            "name": "subject"
+        }, 
+        {
+            "type": "String", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 22, 
+                "line": 65
+            }, 
+            "name": "body"
+        }, 
+        {
+            "type": "SingleEmailMessage", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 38, 
+                "line": 67
+            }, 
+            "name": "message"
+        }, 
+        {
+            "type": "SingleEmailMessage", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 57, 
+                "line": 89
+            }, 
+            "name": "message"
+        }
+    ], 
+    "id": "01p10000000zwiDAAQ", 
+    "methods": [
+        {
+            "modifiers": [], 
+            "name": "getOrgWideEmailAddress", 
+            "parameters": [
+                {
+                    "type": "String", 
+                    "name": "aDisplayName"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 19, 
+                "line": 13
+            }, 
+            "returnType": "String", 
+            "type": null
+        }, 
+        {
+            "modifiers": [], 
+            "name": "getEmailTemplate", 
+            "parameters": [
+                {
+                    "type": "String", 
+                    "name": "aTemplateName"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 26, 
+                "line": 31
+            }, 
+            "returnType": "EmailTemplate", 
+            "type": null
+        }, 
+        {
+            "modifiers": [], 
+            "name": "createEmailMessage", 
+            "parameters": [
+                {
+                    "type": "String", 
+                    "name": "replyTo"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "senderDisplayName"
+                }, 
+                {
+                    "type": "LIST", 
+                    "name": "toAddresses"
+                }, 
+                {
+                    "type": "LIST", 
+                    "name": "ccAddresses"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "subject"
+                }, 
+                {
+                    "type": "String", 
+                    "name": "body"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 41, 
+                "line": 59
+            }, 
+            "returnType": "SingleEmailMessage", 
+            "type": null
+        }, 
+        {
+            "modifiers": [], 
+            "name": "addMessage", 
+            "parameters": [
+                {
+                    "type": "SingleEmailMessage", 
+                    "name": "message"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 89
+            }, 
+            "returnType": "void", 
+            "type": null
+        }, 
+        {
+            "modifiers": [], 
+            "name": "sendEmailMassage", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 96
+            }, 
+            "returnType": "void", 
+            "type": null
+        }
+    ]
+}

@@ -48,6 +48,7 @@ public class MailUtil{
     }
     /**
      * メッセージ作成
+     * @author yajima
      * @param replyTo 返信先アドレス
      * @param senderDisplayName 差出人名
      * @param toAddresses To アドレス
