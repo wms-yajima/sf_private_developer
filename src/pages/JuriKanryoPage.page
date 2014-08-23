@@ -1,0 +1,5 @@
+<apex:page id="JuriKanryoPage" Controller="JuriController">
+    <apex:pageBlock title="登録完了画面">
+        <p>登録が完了しました。</p>        
+    </apex:pageBlock>
+</apex:page>

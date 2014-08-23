@@ -1,0 +1,34 @@
+<apex:page controller="Numeron">
+<!-- Begin Default Content REMOVE THIS -->
+        <div style="width:350px;">
+        <img style="margin-left:80px;" src="http://drive.google.com/uc?export=view&id=0B8td8iajlx4nUXlBVmc4blp0ejg"/>
+        <apex:pageBlock id="server">
+            <ul><b>ルール</b>
+                    <li>ある３桁の秘密の数を当てるゲームです。</li>
+                    <li>位置も数字も同じだとEAT</li>
+                    <li>位置は違うが文字は同じだとBITE</li>
+                    <li>同じ数字は使用不可</li>
+            </ul>
+            <p>
+                <apex:outputText style="font-weight:bold;font-size:1.2em;color:red;margin-left:50px;" value="{!message}"/>
+            </p>
+            <p>
+            　            <apex:form style="margin-left:40px;">
+                    <apex:inputText style="font-size:3.0em;margin-left:20px;text-align:center;" id="inp1" value="{!Inp1}" maxlength="1" size="1"/>
+                    <apex:inputText style="font-size:3.0em;margin-left:20px;text-align:center;" id="inp2" value="{!Inp2}" maxlength="1" size="1"/>
+                    <apex:inputText style="font-size:3.0em;margin-left:20px;text-align:center;" id="inp3" value="{!Inp3}" maxlength="1" size="1"/>
+                    <br/>
+                    <apex:commandButton style="font-size:2.0em;margin-left:30px;margin-top:15px;" value="CheckAnswer" action="{!checkAnswer}" reRender="server"/>
+                    <br/>
+                    <div style="margin-top:5px;width:200px;height:200px;border:double 5px;padding:10px;}">
+                    <apex:outputText style="font-size:1.2em;" value="{!resultlog}" escape="false"/>
+                    </div>
+                    <br/>
+                    <apex:commandButton style="font-size:2.0em;margin-left:40px;" value="ResetGAME" action="{!ResetGame}" reRender="server"/>
+                        　</apex:form>
+            </p>
+        </apex:pageBlock>
+        <img style="max-width:350px;" src="http://drive.google.com/uc?export=view&id=0B8td8iajlx4nY1YtTS1STkUtV0U"/>
+        </div>
+<!-- End Default Content REMOVE THIS -->
+</apex:page>

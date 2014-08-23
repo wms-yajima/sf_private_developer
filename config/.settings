@@ -1,0 +1,19 @@
+{
+    "username": "motoki.yajima@gmail.com", 
+    "environment": "developer", 
+    "project_name": "sf_private_developer", 
+    "workspace": "C:\\sf_workspace\\developer", 
+    "org_url": "", 
+    "namespace": "", 
+    "id": "Q6KIW6LTAZP193D0VQQJJT5ZT6QFQFMG", 
+    "metadata_container": "1dc100000004jxPAAQ", 
+    "subscription": [
+        "ApexClass", 
+        "ApexComponent", 
+        "ApexPage", 
+        "ApexTrigger", 
+        "CustomObject", 
+        "Profile", 
+        "StaticResource"
+    ]
+}

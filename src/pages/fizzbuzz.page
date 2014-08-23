@@ -1,0 +1,15 @@
+<apex:page controller="fizzbuzz_Controller">
+<!-- Begin Default Content REMOVE THIS -->
+        <apex:pageBlock id="server">
+           <apex:form style="margin-left:10px;">
+            <p>
+                    <apex:inputText style="font-size:3.0em;margin-left:55px;text-align:center;" id="inputNumber" value="{!inputNumber}" size="3"/>
+                    <br/>
+                    <apex:commandButton style="font-size:2.0em;margin-left:10px;margin-top:15px;" value="Checkfizzbuzz" action="{!onClick}" reRender="server"/>
+                    <br/>
+            </p>
+           </apex:form>
+           <p><apex:outputText style="font-weight:bold;font-size:2.0em;margin-left:50px;" value="{!result}" /></p>
+        </apex:pageBlock>
+<!-- End Default Content REMOVE THIS -->
+</apex:page>

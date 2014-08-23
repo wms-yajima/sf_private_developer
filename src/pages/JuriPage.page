@@ -1,0 +1,49 @@
+<apex:page Controller="JuriController">
+    <apex:form >
+    <apex:pageBlock title="見込み客情報確認画面">
+     <apex:pageblocksection title="取引先登録情報" columns="1">
+        <apex:panelGrid columns="2">
+          <apex:outputlabel value="会社名" for="company"/>
+          <apex:inputfield id="company" value="{!lead.company}"/>
+          <apex:outputlabel value="会社名（カナ）" for="CONPANY_KANA__c"/>
+          <apex:inputfield id="CONPANY_KANA__c" value="{!lead.CONPANY_KANA__c}"/>
+          <apex:outputlabel value="種別" for="SYUBETSU__c" />
+          <apex:inputfield id="SYUBETSU__c" value="{!lead.SYUBETSU__c}"/>          
+        </apex:panelGrid>        
+     </apex:pageblocksection>
+     <apex:pageblocksection title="取引先責任者登録情報" columns="1">
+        <apex:panelGrid columns="2">
+          <apex:outputlabel value="姓" for="LastName" />
+          <apex:inputfield id="LastName" value="{!lead.LastName}"/>
+          <apex:outputlabel value="名" for="FirstName" />
+          <apex:inputfield id="FirstName" value="{!lead.FirstName}"/>          
+          <apex:outputlabel value="名前（カナ）" for="NAME_KANA__c" />
+          <apex:inputfield id="NAME_KANA__c" value="{!lead.NAME_KANA__c}"/>
+          <apex:outputlabel value="電話" for="phone"/>
+          <apex:inputfield id="phone" value="{!lead.phone}"/>
+          <apex:outputlabel value="郵便番号" for="PostalCode"/>
+          <apex:inputfield id="PostalCode" value="{!lead.PostalCode}"/>
+          <apex:outputlabel value="都道府県" for="State"/>
+          <apex:inputfield id="State" value="{!lead.State}"/>
+          <apex:outputlabel value="市区郡" for="City"/>
+          <apex:inputfield id="City" value="{!lead.City}"/>
+          <apex:outputlabel value="町名・番地" for="Street"/>
+          <apex:inputfield id="Street" value="{!lead.Street}"/>
+          <apex:outputlabel value="メールアドレス" for="Email" />
+          <apex:inputText id="Email" value="{!lead.Email}" size="30"/>
+          <apex:outputlabel value="" />※メールアドレスがない場合、受理完了時のメールは送信されません。          
+        </apex:panelGrid>        
+     </apex:pageblocksection>
+     <apex:pageblocksection title="サービス登録情報" columns="1">
+        <apex:panelGrid columns="2">
+          <apex:outputlabel value="申込みパック" for="MOHSHIKOMI_PACK__c" />
+          <apex:inputfield id="MOHSHIKOMI_PACK__c" value="{!lead.MOHSHIKOMI_PACK__c}"/>          
+          <apex:outputlabel value="コンサルティングオプション" for="CONSULTING_OPTION__c" />
+          <apex:inputCheckbox id="CONSULTING_OPTION__c" value="{!lead.CONSULTING_OPTION__c}"/>          
+        </apex:panelGrid>        
+     </apex:pageblocksection>
+   <p style="color:red;">上記内容で受理する場合は「登録」ボタンをクリックしてください。<br/><br/>          
+   <apex:commandButton value="登録" action="{!executeJuri}"/></p>
+   </apex:pageBlock>
+   </apex:form>
+</apex:page>
