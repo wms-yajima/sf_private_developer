@@ -1,0 +1,73 @@
+{
+    "properties": [], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [], 
+    "namespace": null, 
+    "name": "AccountCreater", 
+    "tableDeclaration": {
+        "type": "AccountCreater", 
+        "modifiers": [], 
+        "references": [], 
+        "location": {
+            "column": 14, 
+            "line": 5
+        }, 
+        "name": "AccountCreater"
+    }, 
+    "key": "01p10000000zweoAAA", 
+    "variables": [
+        {
+            "type": "Lead", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 39, 
+                "line": 10
+            }, 
+            "name": "pLd"
+        }, 
+        {
+            "type": "Account", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 11
+            }, 
+            "name": "account"
+        }, 
+        {
+            "type": "Date", 
+            "modifiers": [], 
+            "references": [], 
+            "location": {
+                "column": 14, 
+                "line": 12
+            }, 
+            "name": "tDate"
+        }
+    ], 
+    "id": "01p10000000zweoAAA", 
+    "methods": [
+        {
+            "modifiers": [], 
+            "name": "createAccount", 
+            "parameters": [
+                {
+                    "type": "Lead", 
+                    "name": "pLd"
+                }
+            ], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 20, 
+                "line": 10
+            }, 
+            "returnType": "Account", 
+            "type": null
+        }
+    ]
+}

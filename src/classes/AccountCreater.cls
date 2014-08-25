@@ -5,7 +5,7 @@
 public class AccountCreater{
     /**
      * 取引先作成
-     * @author yajima
+     * @author yajima　2014
      */
     public Account createAccount(Lead pLd){
         Account account = new Account();
