@@ -4,6 +4,17 @@ public with sharing class ChatWorkAPI {
 	}
 
 	/**
+	* メッセージを投稿する
+	* @auther yajima 2014/08/23
+	*/
+	public void postMessage(String message){
+		String taken = getTokenKey();
+		String roomId = getRoomId();
+	}
+
+
+
+	/**
 	* チャットワークのトークンを取得する
 	* @auther yajima 2014/08/23
 	*/
