@@ -1,0 +1,63 @@
+{
+    "properties": [], 
+    "externalReferences": [], 
+    "innerClasses": [], 
+    "interfaces": [], 
+    "constructors": [
+        {
+            "modifiers": [], 
+            "name": "ChatWorkAPI", 
+            "parameters": [], 
+            "visibility": "PUBLIC", 
+            "references": [], 
+            "location": {
+                "column": 9, 
+                "line": 2
+            }, 
+            "type": null
+        }
+    ], 
+    "namespace": null, 
+    "name": "ChatWorkAPI", 
+    "tableDeclaration": {
+        "type": "ChatWorkAPI", 
+        "modifiers": [], 
+        "references": [], 
+        "location": {
+            "column": 27, 
+            "line": 1
+        }, 
+        "name": "ChatWorkAPI"
+    }, 
+    "key": "01p10000001058CAAQ", 
+    "variables": [], 
+    "id": "01p10000001058CAAQ", 
+    "methods": [
+        {
+            "modifiers": [], 
+            "name": "getTokenKey", 
+            "parameters": [], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 10
+            }, 
+            "returnType": "String", 
+            "type": null
+        }, 
+        {
+            "modifiers": [], 
+            "name": "getRoomId", 
+            "parameters": [], 
+            "visibility": "PRIVATE", 
+            "references": [], 
+            "location": {
+                "column": 17, 
+                "line": 19
+            }, 
+            "returnType": "String", 
+            "type": null
+        }
+    ]
+}

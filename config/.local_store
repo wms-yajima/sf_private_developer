@@ -90,6 +90,19 @@
         "mmState": "clean", 
         "type": "ApexClass"
     }, 
+    "ChatWorkAPI.cls": {
+        "createdById": "005100000034iTQAAY", 
+        "createdByName": "\u8c37\u5cf6 \u57fa\u8a18", 
+        "createdDate": "2014-08-23 15:43:41", 
+        "fileName": "unpackaged/classes/ChatWorkAPI.cls", 
+        "fullName": "ChatWorkAPI", 
+        "id": "01p10000001058CAAQ", 
+        "lastModifiedById": "005100000034iTQAAY", 
+        "lastModifiedByName": "\u8c37\u5cf6 \u57fa\u8a18", 
+        "lastModifiedDate": "2014-08-25 09:00:23", 
+        "mmState": "clean", 
+        "type": "ApexClass"
+    }, 
     "ContactCreater.cls": {
         "createdById": "005100000034iTQAAY", 
         "createdByName": "\u8c37\u5cf6 \u57fa\u8a18", 
